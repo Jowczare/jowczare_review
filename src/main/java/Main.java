@@ -16,7 +16,7 @@ final class Main {
 	 * @throws Exception as per typical main specifications
 	 */
 	public static void main(final String[] args) throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader buffRead = new BufferedReader(new InputStreamReader(System.in));
 		String accStr;  
 		String choice;
 		
@@ -28,7 +28,7 @@ final class Main {
 		else{
 			
 			System.out.println("Enter your string of numbers or just one number:");
-			accStr = br.readLine();
+			accStr = buffRead.readLine();
 			
 			System.out.println("Initial String: ");
 			System.out.println(accStr);
@@ -37,7 +37,7 @@ final class Main {
 					+ "0 (Bubble Sort) \t 1 (Selection Sort) \t 2 (Insertion Sort)\n"
 					+ "3 (Merge Sort) \t 4 (Quick Sort) \t\t 5 (Heap Sort)");
 			System.out.println("Enter selected algorithm code :");
-			choice = br.readLine();
+			choice = buffRead.readLine();
 			
 		}
 		SortDemoData data = new SortDemoData();
